@@ -1,0 +1,762 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+@font-face {
+    font-family: 'GothamPro';
+    src: url('fonts/GothamPro-Light.eot');
+    src: url('fonts/GothamPro-Light.ttf') format('truetype'),
+         url('fonts/GothamPro-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamPro';
+    src: url('fonts/GothamPro.eot');
+    src: url('fonts/GothamPro.ttf') format('truetype'),
+         url('fonts/GothamPro.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamPro';
+    src: url('fonts/GothamPro-Medium.eot');
+    src: url('fonts/GothamPro-Medium.ttf') format('truetype'),
+         url('fonts/GothamPro-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamPro';
+    src: url('fonts/GothamPro-Bold.eot');
+    src: url('fonts/GothamPro-Bold.ttf') format('truetype'),
+         url('fonts/GothamPro-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GothamPro';
+    src: url('fonts/GothamPro-Black.eot');
+    src: url('fonts/GothamPro-Black.ttf') format('truetype'),
+         url('fonts/GothamPro-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-family: 'GothamPro', sans-serif;
+    font-size: 16px;
+}
+
+.wrap{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* overflow-x: hidden; */
+}
+
+.section_about_mail_ampersand{
+    display: none;
+}
+
+/* HEADER_LOGO */
+
+.block_header_logo_name{
+    display: block;
+    width: 100%;
+    height: 180px;
+    background: #000;
+}
+
+.block_header_logo_name .logo_name{
+    display: flex;
+    justify-content: center;
+    padding: 48px 0 0 0;
+}
+
+.logo_name a{
+    font-weight: 700;
+    font-size: 50px;
+    color: #F2F2F2;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+.block_header_logo_name .under_logo_word{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 0 0;
+}
+
+.under_logo_word p{
+    font-weight: 300;
+    font-size: 20px;
+    color: #F2F2F2;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 0 10px;
+}
+
+/* SECTIONS */
+
+.block_sections_wrap{
+    display: flex;
+}
+
+.section_works{
+    display: flex;
+    height: 640px;
+    width: 50%;
+    background-color: #C1272D;
+    text-decoration: none;
+}
+
+.section_about_mail{
+    display: flex;
+    height: 640px;
+    width: 50%;
+    background-color: #F7931E;
+    text-decoration: none;
+}
+
+.section_name{
+    margin: auto;
+    color: #F2F2F2;
+    font-size: 44px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 4.4px;
+}
+
+.section_name:hover {
+    text-decoration-line: underline;
+    text-decoration-thickness: 4px;
+    text-underline-offset: 10px;
+  }
+
+/* SOCIAL_LINKS */
+
+.block_social_links{
+    display: flex;
+    height: 180px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFFFF;
+}
+
+.social_links_content{
+    padding: 0 10px;
+  }
+
+.icon:not(:last-child) {
+    margin-right: 200px;
+    text-decoration: none;
+}
+
+/* FOOTER */
+
+.block_footer{
+    display: flex;
+    width: 100%;
+    height: 120px;
+    margin-top: auto;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+}
+
+.block_footer p{
+    color: #F2F2F2;
+}
+
+/* WORKS PAGE */
+
+.works_section_header_wrap{
+    display: block;
+    width: 100%;
+}
+
+.works_section_header_name{
+    display: flex;
+    justify-content: center;
+    padding: 42px 0 0 0;
+}
+
+.works_section_header_name p{
+    padding: 0 10px 0 10px;
+    font-size: 42px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 4.2px;;
+}
+
+.works_section_header_name_text_color{
+    color:#C1272D;
+}
+
+.link_to_back{
+    display: flex;
+    justify-content: center;
+    padding: 28px 0 50px 0;
+}
+
+.link_to_back a{
+    padding: 0 10px 0 10px;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #808080;
+}
+
+.link_to_back a:hover {
+    text-decoration-line: underline;
+    text-decoration-thickness: 2.5px;
+    text-underline-offset: 8px;
+}
+
+/* WORKS_SEC_GRID */
+
+.works_gallery_grid_wrap{
+    margin: auto;
+    padding: 0px 10px 0px;
+}
+
+.works_gallery_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.album-cover-pic-block{
+    position: relative;
+}
+
+.album-cover-pic-block
+
+.album-cover-pic-block-background{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(179, 179, 179, 0)
+}
+
+.album-cover-pic-block-background:hover{
+    background-color: rgb(179, 179, 179, 1.0)
+}
+
+.album-cover-pic-block-text-name{
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.album-cover-pic-block-text-heading{
+    position: relative;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main_album_name{
+    font-size: 50px;
+    font-weight: 700;
+    color: #000000;
+    letter-spacing: 3px;
+}
+
+.add_album_name{
+    font-size: 22px;
+    color: #000000;
+    letter-spacing: 2.2px;
+}
+
+.album-cover-picture{
+    max-width: 100%;
+    display: block;
+}
+
+/* ABOUT_PAGE*/
+
+.about_section_header_wrap{
+    display: block;
+    width: 100%;
+    background: #FFFFFF;
+}
+
+.about_section_header_name{
+    display: flex;
+    justify-content: center;
+    padding: 42px 0 0 0;
+}
+
+.about_section_header_name p{
+    padding: 0 10px 0 10px;
+    font-size: 42px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 4.2px;;
+}
+
+.about_section_header_name_text_color{
+    color: #F7931E;
+}
+
+.about_section_homelink a:hover {
+    text-decoration-line: underline;
+    text-decoration-thickness: 2.5px;
+    text-underline-offset: 8px;
+}
+
+.about_section_wrap{
+    display: flex;
+    margin: auto;
+    padding: 30px 10px 180px 10px;
+}
+
+.about_section_img{
+    width: 300px;
+    height: 300px;
+    margin: 4px 30px 0 30px;
+}
+
+.about_text{
+    font-family: 'Roboto';
+}
+
+.about_text_content{
+    font-size: 20px;
+    letter-spacing: 2px;
+    line-height: 28px;
+    color: #000;
+}
+
+.about_text_mail{
+    font-weight: 500;
+}
+
+/* DBI ALBUM SECTION */
+
+.album_section_header_wrap{
+    display: block;
+    width: 100%;
+}
+
+.album_section_header_name{
+    display: flex;
+    justify-content: center;
+    padding: 42px 0 0 0;
+}
+
+.album_section_header_name p{
+    padding: 0 10px 0 10px;
+    font-size: 34px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.album_section_header_name_text_color{
+    color:#4D4D4D;
+}
+
+.dbi_album_section{
+    display: block;
+    align-items: center;
+    margin: auto;
+}
+
+.img_block img{
+    width: 1300px;
+    padding-bottom: 20px;
+}
+
+/* LINK BACK TO TOP */
+
+.link_to_back_to_top{
+    display: flex;
+    justify-content: center;
+    padding: 40px 0 80px 0;
+}
+
+.link_to_back_to_top a{
+    padding: 0 10px 0 10px;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #808080;
+}
+
+.link_to_back_to_top a:hover {
+    text-decoration-line: underline;
+    text-decoration-thickness: 2.5px;
+    text-underline-offset: 8px;
+}
+
+/* H&H ALBUM SECTION */
+
+.horace_and_hubot_name_header_br{
+    display: none;
+}
+
+/* PASSION IMAGES ALBUM SECTION */
+
+.passion_images_br{
+    display: none;
+}
+
+/* ALBUM-GALLERY-FOOTAGE */
+
+.album-pictures-grid-wrap{
+    margin: auto;
+    display: grid;
+    padding: 20px 10px 0px 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.album-image-container{
+    position: relative;
+}
+
+.album-image-container-overlay{ 
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgb(20, 53, 71);
+    opacity: 0;
+}
+
+.album-image-container-overlay:hover{
+    opacity: .50;
+    transition: .3s ease;
+}
+
+.album-image img{
+    display: block;
+    width: 100%;
+}
+
+/* ADAPTATION */
+
+@media print, screen and (min-width: 320px) and (max-device-width: 640px) {
+
+
+/* LOGO */
+
+.block_header_logo_name {
+    height: 120px;
+}
+
+.block_header_logo_name .logo_name {
+    padding: 38px 0 0 0;
+}
+
+.logo_name a{
+    font-size: 20px;
+}
+
+.block_header_logo_name .under_logo_word{
+    padding: 10px 0 0 0;
+}
+
+.under_logo_word p{
+    font-size: 18px;
+}
+
+/* MENU_SECTIONS */
+
+.block_sections_wrap {
+    display: block;
+}
+
+.section_works {
+    height: 180px;
+    width: 100%;
+}
+
+.section_about_mail_ampersand{
+    display: block;
+}
+
+.section_about_mail{
+    height: 180px;
+    width: 100%;
+}
+
+.section_name{
+    font-size: 30px;
+    letter-spacing: 2.2px;
+    text-align: center;
+    line-height: 33px;
+}
+
+.section_name:hover {
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 6px;
+}
+
+/* SOCIAL_ICONS */
+
+.social_links_content img{
+    height: 30px;
+}
+
+.icon:not(:last-child){
+    margin-right: 46px;
+}
+
+/* BLOCK_FOOTER */
+
+.block_footer p{
+    font-size: 14px;
+}
+
+/* WORKS_SECTION_MENU */
+
+.works_section_header_name{
+    padding: 26px 0px 0px 0px;
+}
+
+.works_section_header_wrap p{
+    font-size: 30px;
+    letter-spacing: 2.2px;
+}
+
+.link_to_back{
+    padding: 28px 0 45px 0;
+}
+
+.link_to_back a{
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.link_to_back a:hover {
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+
+.works_gallery_grid{
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.main_album_name{
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.add_album_name{
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+/* WORK_SECTION_INSIDE */
+
+.album_section_header_name p{
+    font-size: 40px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.img_block img{
+    width: 320px;
+    padding: 0px 10px 0px 10px 0px;
+    padding-bottom: 5px;
+}
+
+.link_to_back_to_top{
+    padding: 28px 0 20px 0;
+}
+
+.link_to_back_to_top a{
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.link_to_back_to_top a:hover {
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+}
+
+/* HORACE&HUBOT_HEADER */
+
+.horace_and_hubot_name_header_br{
+    display: block;
+}
+
+.passion_images_br{
+    display: block;
+}
+
+/* ALBUM-GALLERY-FOOTAGE */
+
+.album-pictures-grid-wrap{
+    padding: 0px 10px 0px 10px;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+/* WORK_SECTION_MENU */
+
+.about_section_header_name p{
+    font-size: 30px;
+    letter-spacing: 2.2px;
+}
+
+.about_section_wrap{
+    display: block;
+    width: 250px;
+    margin: auto;
+    padding: 0px 0px 0px 0px;
+}
+
+.text_none_enter{
+    display: none;
+}
+
+.about_section_img{
+    margin: auto;
+    width: 140px;
+    height: 140px;
+}
+
+.about_text{
+    padding-top: 10px;
+}
+
+.about_text_content{
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 22px;
+}
+
+.about_text_mail{
+    padding-bottom: 10px;
+}
+}
+
+@media print, screen and (min-width: 641px) and (max-device-width: 960px) {
+
+/* WORKS_SECTION_MENU */
+
+.link_to_back{
+    padding: 28px 0 50px 0;
+}
+
+.works_gallery_grid{
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.main_album_name{
+    font-size: 38px;
+}
+
+/* WORK_SECTION_INSIDE */    
+
+.img_block img{
+    width: 620px;
+    padding: 0px 10px 0px 10px 0px;
+    padding-bottom: 5px;
+}
+
+.section_name{
+    font-size: 40px;
+    text-align: center;
+    line-height: 46px;
+}
+
+.section_about_mail_ampersand{
+    display: block;
+}
+
+.section_name:hover {
+    text-decoration-line: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 5px;
+}
+
+/* ALBUM-GALLERY-FOOTAGE */
+
+.album-pictures-grid-wrap{
+    padding: 0px 10px 0px 10px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.album-pictures-grid-wrap{
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+/* SOCIAL_ICONS */
+
+.social_links_content img{
+    height: 50px;
+}
+
+.icon:not(:last-child){
+    margin-right: 100px;
+}
+
+/* ABOUT_SECTION */
+
+.about_section_wrap {
+    display: flex;
+    margin: auto;
+    padding: 30px 30px 180px 0px;
+}
+
+.about_section_img {
+    margin: 4px 30px 0 30px;
+}
+}
+
+@media print, screen and (min-width: 961px) and (max-device-width: 1280px){
+
+.img_block img{
+    width: 940px;
+    padding: 0px 10px 0px 10px 0px;
+    padding-bottom: 5px;
+}
+
+.album-pictures-grid-wrap {
+    padding: 0px 10px 0px 10px;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+}
+
+
+@media print, screen and (min-device-width: 1281px) and (max-device-width: 1440px){
+
+.img_block img{
+    width: 1260px;
+    padding: 0px 10px 0px 10px 0px;
+    padding-bottom: 5px;
+}
+}
